@@ -78,7 +78,7 @@
 
         async function fetchRepos() {
             try {
-                const response = await fetch(`https://api.github.com/users/${Akshith985}/repos?sort=updated&per_page=100`);
+                const response = await fetch(`https://api.github.com/users/${githubUsername}/repos?sort=updated&per_page=100`);
                 if (!response.ok) throw new Error('Failed to fetch');
                 
                 const repos = await response.json();
