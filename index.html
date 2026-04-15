@@ -14,7 +14,22 @@
         .text-aws-gold { color: #ff9900; }
         .bg-aws-gold { background-color: #ff9900; }
         .status-dot { height: 8px; width: 8px; background-color: #22c55e; border-radius: 50%; display: inline-block; box-shadow: 0 0 8px #22c55e; }
+        button:active { transform: scale(0.98); }
     </style>
+    <script>
+        function copyEmail() {
+            const email = 'akshithclg@gmail.com';
+            navigator.clipboard.writeText(email);
+            const btn = document.getElementById('email-btn');
+            const originalText = 'EMAIL';
+            btn.innerText = 'COPIED!';
+            btn.classList.add('text-aws-gold');
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.classList.remove('text-aws-gold');
+            }, 2000);
+        }
+    </script>
 </head>
 <body class="p-4 md:p-16 lg:px-48">
 
@@ -77,12 +92,12 @@
 
         <footer class="pt-20 border-t border-zinc-800">
             <div class="glass p-6 rounded-t-xl mono text-xs text-slate-500 space-y-2">
-                <p class="text-aws-gold">$ curl -X GET akshith.dev/contact</p>
+                <p class="text-aws-gold uppercase">$ curl -X GET akshith.dev/contact</p>
                 <p>> Loading contact modules...</p>
-                <div class="flex flex-wrap gap-8 pt-4">
-                    <a href="https://github.com/Akshith985" class="hover:text-white transition-colors">GITHUB</a>
-                    <a href="https://www.linkedin.com/in/akshith-anand-5a5988379/" class="hover:text-white transition-colors">LINKEDIN</a>
-                    <a href="mailto:akshithclg@gmail.com" class="hover:text-white transition-colors">EMAIL</a>
+                <div class="flex flex-wrap gap-8 pt-4 uppercase">
+                    <a href="https://github.com/Akshith985" target="_blank" class="hover:text-white transition-colors">GITHUB</a>
+                    <a href="https://www.linkedin.com/in/akshith-anand-5a5988379/" target="_blank" class="hover:text-white transition-colors">LINKEDIN</a>
+                    <button id="email-btn" onclick="copyEmail()" class="hover:text-white transition-colors text-left uppercase">EMAIL</button>
                 </div>
             </div>
             <p class="text-center py-8 text-[10px] text-zinc-600 tracking-[0.5em] uppercase">
@@ -93,5 +108,4 @@
     </div>
 
 </body>
-</html>
 </html>
