@@ -5,91 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akshith Anand | Cloud & DevOps</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        body { 
-            font-family: 'Inter', sans-serif; 
-            background-color: #232f3e; /* AWS Squid Ink */
-            color: #ffffff; 
-        }
+        body { font-family: 'Inter', sans-serif; background-color: #0f1115; color: #ffffff; }
+        .mono { font-family: 'Fira Code', monospace; }
         .aws-border { border-left: 4px solid #ff9900; }
-        .glass { 
-            background: rgba(35, 47, 62, 0.8); 
-            backdrop-filter: blur(8px); 
-            border: 1px solid rgba(255, 153, 0, 0.2); 
-        }
-        .stat-card img { width: 100%; border-radius: 4px; filter: grayscale(20%) contrast(110%); }
+        .glass { background: rgba(25, 34, 45, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255, 153, 0, 0.1); }
         .text-aws-gold { color: #ff9900; }
         .bg-aws-gold { background-color: #ff9900; }
+        .status-dot { height: 8px; width: 8px; background-color: #22c55e; border-radius: 50%; display: inline-block; box-shadow: 0 0 8px #22c55e; }
     </style>
 </head>
-<body class="p-4 md:p-16">
+<body class="p-4 md:p-16 lg:px-48">
 
-    <div class="max-w-5xl mx-auto space-y-16">
+    <div class="max-w-6xl mx-auto space-y-20">
         
         <header class="space-y-6">
-            <div class="inline-block px-3 py-1 rounded text-xs font-bold tracking-widest bg-aws-gold text-[#232f3e] uppercase">
-                Cloud Operations & Architecture
+            <div class="flex items-center gap-3 mono text-xs text-slate-400">
+                <span class="status-dot"></span>
+                <span>SYSTEMS OPERATIONAL</span>
+                <span class="text-slate-700">|</span>
+                <span>LOC: CHENNAI_IN</span>
             </div>
-            <h1 class="text-6xl font-extrabold tracking-tighter">
+            <h1 class="text-6xl md:text-7xl font-extrabold tracking-tighter uppercase">
                 Akshith <span class="text-aws-gold">Anand</span>
             </h1>
-            <p class="text-xl text-slate-300 max-w-3xl leading-relaxed">
-                Specializing in <span class="text-white font-semibold">Infrastructure as Code</span> and distributed systems. 
-                Bridging the gap between scalable full-stack applications and high-availability cloud architecture.
+            <p class="text-xl text-slate-400 max-w-3xl leading-relaxed">
+                Cloud Engineer focusing on <span class="text-white">High Availability</span> and <span class="text-white">Infrastructure as Code</span>. 
+                Currently automating decentralized systems and refining distributed databases.
             </p>
             
-            <div class="flex flex-wrap gap-2 pt-2">
-                <span class="px-3 py-1 bg-[#19222d] border border-slate-700 rounded text-sm text-slate-300">Docker & K8s</span>
-                <span class="px-3 py-1 bg-[#19222d] border border-slate-700 rounded text-sm text-slate-300">Terraform</span>
-                <span class="px-3 py-1 bg-[#19222d] border border-slate-700 rounded text-sm text-slate-300">AWS / CloudNative</span>
-                <span class="px-3 py-1 bg-[#19222d] border border-slate-700 rounded text-sm text-slate-300">CI/CD Pipelines</span>
-                <span class="px-3 py-1 bg-[#19222d] border border-slate-700 rounded text-sm text-slate-300">Systems Engineering</span>
+            <div class="flex flex-wrap gap-2 pt-2 mono">
+                <span class="px-3 py-1 bg-zinc-900 border border-zinc-800 rounded text-xs text-aws-gold">KUBERNETES</span>
+                <span class="px-3 py-1 bg-zinc-900 border border-zinc-800 rounded text-xs text-aws-gold">TERRAFORM</span>
+                <span class="px-3 py-1 bg-zinc-900 border border-zinc-800 rounded text-xs text-aws-gold">AWS_LAMBDA</span>
+                <span class="px-3 py-1 bg-zinc-900 border border-zinc-800 rounded text-xs text-aws-gold">DOCKER</span>
             </div>
         </header>
 
         <section class="space-y-8">
             <div class="flex items-center gap-4">
-                <h2 class="text-2xl font-bold uppercase tracking-wider">Deployment Activity</h2>
-                <div class="flex-grow h-px bg-slate-700"></div>
+                <h2 class="text-sm font-bold uppercase tracking-[0.3em] text-slate-500">Live Infrastructure Stats</h2>
+                <div class="flex-grow h-px bg-zinc-800"></div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="glass p-2 rounded">
-                    <img src="https://github-readme-stats.vercel.app/api?username=Akshith985&show_icons=true&theme=dark&icon_color=ff9900&text_color=ffffff&bg_color=232f3e&hide_border=true" alt="Akshith's GitHub Stats">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass p-4 rounded-lg overflow-hidden">
+                    <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Akshith985&show_icons=true&theme=dark&icon_color=ff9900&text_color=ffffff&bg_color=0f1115&hide_border=true" 
+                         alt="GitHub Stats" class="w-full">
                 </div>
-                <div class="glass p-2 rounded">
-                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Akshith985&layout=compact&theme=dark&text_color=ffffff&bg_color=232f3e&hide_border=true" alt="Top Languages">
+                <div class="glass p-4 rounded-lg overflow-hidden">
+                    <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Akshith985&layout=compact&theme=dark&text_color=ffffff&bg_color=0f1115&hide_border=true" 
+                         alt="Top Languages" class="w-full">
                 </div>
             </div>
         </section>
 
-        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="aws-border pl-6 space-y-3">
-                <h3 class="text-lg font-bold text-aws-gold uppercase">Systems Design</h3>
-                <p class="text-sm text-slate-400">Deep-diving into low-level systems. My custom database project (MiniWeb) demonstrates my foundation in WAL, MemTables, and storage engine optimization.</p>
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="aws-border pl-6 space-y-4">
+                <h3 class="mono text-sm font-bold text-aws-gold tracking-widest">01 / CLOUD_ARCH</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Designing scalable environments with a focus on 99.9% uptime. Integrating Web3 infrastructure with AWS native services for RWA tokenization (Invoice.OS).</p>
             </div>
-            <div class="aws-border pl-6 space-y-3">
-                <h3 class="text-lg font-bold text-aws-gold uppercase">Automation</h3>
-                <p class="text-sm text-slate-400">Streamlining workflows from local dev to production. Focused on CNCF tools like KitOps and containerization best practices.</p>
+            <div class="aws-border pl-6 space-y-4">
+                <h3 class="mono text-sm font-bold text-aws-gold tracking-widest">02 / SYSTEMS_ENG</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Building low-level distributed databases like MiniWeb. Proficient in Write-Ahead Logging (WAL) and optimizing storage engines for high-throughput apps.</p>
             </div>
-            <div class="aws-border pl-6 space-y-3">
-                <h3 class="text-lg font-bold text-aws-gold uppercase">Cloud Native</h3>
-                <p class="text-sm text-slate-400">Leveraging AWS and Web3 infrastructure. Experienced in deploying RWA tokenization platforms and managing distributed blockchain nodes.</p>
+            <div class="aws-border pl-6 space-y-4">
+                <h3 class="mono text-sm font-bold text-aws-gold tracking-widest">03 / DEVOPS_CI</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Automating the boring stuff. Focused on CNCF KitOps and building robust pipelines that ensure seamless deployments across hybrid environments.</p>
             </div>
         </section>
 
-        <footer class="pt-16 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="text-slate-500 text-sm">
-                /root/akshith-anand <span class="animate-pulse">_</span>
+        <footer class="pt-20 border-t border-zinc-800">
+            <div class="glass p-6 rounded-t-xl mono text-xs text-slate-500 space-y-2">
+                <p class="text-aws-gold">$ curl -X GET akshith.dev/contact</p>
+                <p>> Loading contact modules...</p>
+                <div class="flex flex-wrap gap-8 pt-4">
+                    <a href="https://github.com/Akshith985" class="hover:text-white transition-colors">GITHUB_PROFILE</a>
+                    <a href="#" class="hover:text-white transition-colors">LINKEDIN_CONNECT</a>
+                    <a href="#" class="hover:text-white transition-colors">EMAIL_SECURE</a>
+                </div>
             </div>
-            <div class="flex gap-8 text-sm font-bold tracking-widest uppercase">
-                <a href="https://github.com/Akshith985" class="hover:text-aws-gold transition-colors">GitHub</a>
-                <a href="#" class="hover:text-aws-gold transition-colors">LinkedIn</a>
-                <a href="#" class="hover:text-aws-gold transition-colors">Infrastructure Log</a>
-            </div>
+            <p class="text-center py-8 text-[10px] text-zinc-600 tracking-[0.5em] uppercase">
+                Built for Scalability • 2026 Edition
+            </p>
         </footer>
 
     </div>
 
 </body>
+</html>
 </html>
